@@ -21,8 +21,10 @@ numpy
 
 在设置中找到环境变量，在系统变量中的Path下新建地址，把刚才的地址复制进去，一路确定
 ![alt text](image.png)
+
 2. **设置模拟器**
 在模拟器的设置中找到开发者选项，打开其下的“USB调试”
+
 3. **初始化uiautomator2**
 在cmd中输入adb connect 127.0.0.1:16384
 
@@ -104,3 +106,4 @@ numpy
 感谢大佬的[自动化教程](https://blog.csdn.net/sijia5135/article/details/105492779)
 
 感谢来使用这个史山代码的大佬们，请大佬们谅解我写的太垃圾了（
+
