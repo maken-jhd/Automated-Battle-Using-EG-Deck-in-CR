@@ -160,7 +160,7 @@ class MainLoop:
         self.running = True
         
         # 初始化游戏状态检测器
-        template_path = r"E:\codes\ClashRoyale\autoEgolem\templates\game_end_template.png"
+        template_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates", "game_end_template.png")
         self.game_detector = GameStateDetector(
             device_id=self.device_id,
             #debug=True,
@@ -235,4 +235,5 @@ if __name__ == "__main__":
         print("程序被用户中断")
     finally:
         main_loop.running = False
+
         main_loop.stop_op2_event.set()  # 确保操作2线程停止
