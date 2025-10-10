@@ -60,10 +60,11 @@ if __name__ == "__main__":
     region = capture_region(
         device_id='127.0.0.1:16384',
         x1=625, y1=2200, x2=800, y2=2300,
-        save_path='E:/codes/ClashRoyale/autoEgolem/templates/screenshot_region.png'
+        save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates", "screenshot_region.png")
     )
     
     if region is not None:
         print(f"成功获取区域截图，尺寸: {region.shape}")
     else:
+
         print("获取区域截图失败")
