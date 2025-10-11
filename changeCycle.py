@@ -40,7 +40,7 @@ def changeCycle():
                 placeCardN("Unknown",0)
                 guess = True
             else:
-                cycle.set_card(cycle.cycle.find_card("Unknown")[0]["position"],"Unknown",0.0,True)
+                cycle.set_card(cycle.find_card("Unknown")[0]["position"],"Unknown",0.0,True)
                 delay = 0
         else:
             placeCardN("NWitch",0)
@@ -56,4 +56,5 @@ if __name__ == "__main__":
     init5()
     cycle.show_all()
     changeCycle()
+
     cycle.show_all()
